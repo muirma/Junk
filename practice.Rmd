@@ -1,0 +1,61 @@
+---
+title: "practice"
+author: "Morgan Muir"
+date: "1/17/19"
+output: bookdown::html_document2
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment=NA)
+```
+
+# R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r label="pressure", echo=FALSE, fig.width=4,fig.height=4,fig.align='center',fig.cap="this is a title"}
+plot(pressure,col="blue",pch=19)
+
+```
+
+
+$$\bar{x}=\sum_{i=1}^n\frac{x_i}{n}$$
+
+The average pressure for the arctic 'pressure' dataframe is `r round(mean(pressure$pressure),2)` mm.
+
+## are you here?
+
+The sample mean is defined in Equation \@ref(eq:mean).
+
+\begin{equation}
+\bar{x}=\sum_{i=1}^n\frac{x_i}{n}
+(\#eq:mean)
+\end{equation}
+
+
+
+Please refer to Figure \@ref(fig:pressure)
+
+
+## Insert URL
+```{r,echo=FALSE}
+knitr::include_url("https://www.tasteofhome.com/recipes/best-ever-fried-chicken/")
+
+
+```
+
+
+
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
